@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoCurso.Inicial"
+             Title="App Guia do Curso de DS">
+    <ContentPage.Content>
+        
+        <ScrollView>
+            
+            <StackLayout Padding="10">
+
+                <Label Text="Olá! Este aplicativo servirá como um guia do curso Técnico em Desenvolvimento de Sistemas"
+                       FontSize="Medium" HorizontalTextAlignment="Center"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
+
+                <Label Text="O curso tem três anos de duração. O app te explicará cada um desses anos"
+                       FontSize="Medium" HorizontalTextAlignment="Center"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
+
+                <Label Text="Em breve você poderá acessá-lo pela PlayStore"
+                       TextColor="#AB0209" FontSize="Small" HorizontalTextAlignment="Center"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
+                
+                <!--colocar foto do povo-->
+
+                <Label Text="Desenvolvido pelo 2° ano DS 2022, para a Expotec"
+                       FontSize="Small" HorizontalTextAlignment="Center"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
+            </StackLayout>
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
