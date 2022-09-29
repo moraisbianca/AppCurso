@@ -5,7 +5,7 @@
 
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <Grid BackgroundColor="#3E474C">
+            <Grid BackgroundColor="#FFF">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="160"/>
                     <RowDefinition Height="*"/>
@@ -17,7 +17,7 @@
                              Margin="10"
                              HorizontalOptions="FillAndExpand">
 
-                    <Image Source="logo" Aspect="AspectFill"/>
+                    <Image Source="Images.logo" Aspect="AspectFill"/>
 
                 </StackLayout>
 

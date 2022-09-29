@@ -11,7 +11,7 @@
                 <Setter Property="FontFamily">
                     <Setter.Value>
                         <OnPlatform x:TypeArguments="x:String"
-                                Android="century-gothic.ttf#century-gothic" />
+                                Android="century-gothic-bold.ttf#century-gothic-bold" />
                     </Setter.Value>
                 </Setter>
             </Style>

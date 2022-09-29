@@ -1,12 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoCurso.View.TerceiroAno">
+             x:Class="ProjetoCurso.View.TerceiroAno"
+             BackgroundColor="#FFF"
+             Title="Disciplinas do Terceiro Ano">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        <ScrollView>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+
+                <Button Text="Programação Web III" Clicked="ProWeb" Style="{StaticResource BotaoCinza}"/>
+                <Button Text="Programação Mobile II" Clicked="ProMob" Style="{StaticResource BotaoCinza}"/>
+                <Button Text="Sistemas Embarcados II" Clicked="SistEmb" Style="{StaticResource BotaoCinza}"/>
+                <Button Text="Segurança e Sistemas da Informação" Clicked="SegSistInfo" Style="{StaticResource BotaoCinza}"/>
+                <Button Text="Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso" Clicked="PlanejTCC" Style="{StaticResource BotaoCinza}"/>
+                <Button Text="Qualidade e Teste de Software" Clicked="TesteSoftware" Style="{StaticResource BotaoCinza}"/>
+                
+            </StackLayout>
+                        
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

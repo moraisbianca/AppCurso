@@ -16,5 +16,35 @@ namespace ProjetoCurso.View
         {
             InitializeComponent();
         }
+
+        private void ProWeb(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProMob(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SistEmb(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SegSistInfo(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PlanejTCC(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TesteSoftware(object sender, EventArgs e)
+        {
+
+        }
     }
 }

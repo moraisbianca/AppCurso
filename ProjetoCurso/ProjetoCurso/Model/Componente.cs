@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProjetoCurso
+namespace ProjetoCurso.Model
 {
     internal class Componente
     {

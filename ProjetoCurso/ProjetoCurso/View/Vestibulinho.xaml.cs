@@ -14,6 +14,7 @@ namespace ProjetoCurso.View
     {
         public Vestibulinho()
         {
+            InitializeComponent();
         }
     }
 }
