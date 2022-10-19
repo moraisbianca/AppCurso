@@ -2,33 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoCurso.Inicial"
+             BackgroundColor="#FFF"
              Title="App Guia do Curso de DS">
     <ContentPage.Content>
-        
+
         <ScrollView>
-            
-            <StackLayout Padding="10">
 
-                <Label Text="Olá! Este aplicativo servirá como um guia do curso Técnico em Desenvolvimento de Sistemas"
+            <StackLayout>
+                <Frame Scale="0.9" CornerRadius="10">
+                    <StackLayout Padding="40">
+                        <Image x:Name="logo" Scale="2.5"/>
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout Padding="10">
+
+                    <Label Text="Olá! Este aplicativo servirá como um guia do curso Técnico em Desenvolvimento de Sistemas"
                        FontSize="Medium" HorizontalTextAlignment="Center"
                        Style="{ StaticResource FonteGeralPersonalizada}" />
 
-                <Label Text="O curso tem três anos de duração. O app te explicará cada um desses anos"
+                    <Label Text="O curso tem três anos de duração. O app te explicará cada um desses anos"
                        FontSize="Medium" HorizontalTextAlignment="Center"
                        Style="{ StaticResource FonteGeralPersonalizada}" />
 
-                <Label Text="Em breve você poderá acessá-lo pela PlayStore"
+                    <Label Text="Em breve você poderá acessá-lo pela PlayStore"
                        TextColor="#AB0209" FontSize="Small" HorizontalTextAlignment="Center"
                        Style="{ StaticResource FonteGeralPersonalizada}" />
-                
-                <!--colocar foto do povo-->
 
-                <Label Text="Desenvolvido pelo 2° ano DS 2022, para a Expotec"
+                    <Frame Scale="1" CornerRadius="10">
+                        <Image x:Name="FotoSala" />
+                    </Frame>
+                    
+                    <Label Text="Desenvolvido pela Bibi Morais do 2° ano DS 2022, para a Expotec"
                        FontSize="Small" HorizontalTextAlignment="Center"
                        Style="{ StaticResource FonteGeralPersonalizada}" />
+                    
+                </StackLayout>
             </StackLayout>
-            
+
         </ScrollView>
-        
+
     </ContentPage.Content>
 </ContentPage>

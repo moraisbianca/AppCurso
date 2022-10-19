@@ -15,6 +15,8 @@ namespace ProjetoCurso
         public Inicial()
         {
             InitializeComponent();
+            FotoSala.Source = ImageSource.FromResource("ProjetoCurso.Images.FotoSala.jpg");
+            logo.Source = ImageSource.FromResource("ProjetoCurso.Images.logo.png");
         }
     }
 }

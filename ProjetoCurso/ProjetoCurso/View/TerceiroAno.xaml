@@ -4,22 +4,23 @@
              x:Class="ProjetoCurso.View.TerceiroAno"
              BackgroundColor="#FFF"
              Title="Disciplinas do Terceiro Ano">
-    
+
     <ContentPage.Content>
-        
+
         <ScrollView>
 
-            <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Frame>
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+                    <Button Text="Programação Web III" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Programação Mobile II" Clicked="ProMob" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Sistemas Embarcados II" Clicked="SistEmb" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Segurança e Sistemas da Informação" Clicked="SegSistInfo" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso" Clicked="PlanejTCC" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Qualidade e Teste de Software" Clicked="TesteSoftware" Style="{StaticResource BotaoVerm}"/>
 
-                <Button Text="Programação Web III" Clicked="ProWeb" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Programação Mobile II" Clicked="ProMob" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Sistemas Embarcados II" Clicked="SistEmb" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Segurança e Sistemas da Informação" Clicked="SegSistInfo" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso" Clicked="PlanejTCC" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Qualidade e Teste de Software" Clicked="TesteSoftware" Style="{StaticResource BotaoCinza}"/>
-                
-            </StackLayout>
-                        
+                </StackLayout>
+            </Frame>
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

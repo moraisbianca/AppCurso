@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProjetoCurso.Model
 {
-    internal class Componente
+    public class Componente
     {
         public string Nome { get; set; }
         public int CargaHoraria { get; set; }

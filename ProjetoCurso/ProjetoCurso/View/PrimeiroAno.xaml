@@ -2,28 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoCurso.View.PrimeiroAno"
-             BackgroundColor="#FFF"
+             BackgroundColor="black"
              Title="Disciplinas do Primeiro Ano">
-    
-    
+
+
     <ContentPage.Content>
 
         <ScrollView>
 
-            <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Frame>
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
 
-                <Button Text="Fundamentos da Informática" Clicked="Fundamentos" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Programação de Algoritmos" Clicked="ProAlg" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Programação Web I" Clicked="ProWeb" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Banco de Dados I" Clicked="BancoDados" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Análise e Desenvolvimento de Sistemas" Clicked="Analise" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Design Digital" Clicked="Design" Style="{StaticResource BotaoCinza}"/>
-                
+                    <Button Text="Fundamentos da Informática" Clicked="Fundamentos" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Programação de Algoritmos" Clicked="ProAlg" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Programação Web I" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Banco de Dados I" Clicked="BancoDados" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Análise e Desenvolvimento de Sistemas" Clicked="Analise" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Design Digital" Clicked="Design" Style="{StaticResource BotaoVerm}"/>
 
-            </StackLayout>
-            
+
+                </StackLayout>
+            </Frame>
         </ScrollView>
-            
-        
+
+
     </ContentPage.Content>
 </ContentPage>

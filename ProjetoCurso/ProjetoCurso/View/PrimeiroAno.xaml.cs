@@ -72,13 +72,21 @@ namespace ProjetoCurso.View
             {
                 var c = new Componente
                 {
-                    Nome = "",
-                    CargaHoraria = 0,
-                    Atribuicoes = "",
-                    ValoresAtitudes = "",
-                    Competencias = "",
-                    Habilidades = "",
-                    BasesTecnologicas = ""
+                    Nome = "Programação Web I",
+                    CargaHoraria = 80,
+                    Atribuicoes = "Desenvolver sites para web",
+                    ValoresAtitudes = "Incentivar a criatividade" + 
+                                      "Estimular a organização" +
+                                      "Fortalecer a persistência na resolução de situações-problema",
+                    Competencias = "Desenvolver páginas para a internet",
+                    Habilidades = "Construir páginas para internet utilizando linguagem de marcação de texto" +
+                                  "Utilizar linguagem de script para web" +
+                                  "aplicar formatação através dee folhas de estilo",
+                    BasesTecnologicas = " - Conceitos de desenvolvimento para a web" +
+                                        " - Linguagem de marcação para a web (HTML)" +
+                                        " - Documento HTML mínimo, tags, atributos e conteúdo" +
+                                        " - Estilos em Cascata"
+
 
                 };
 

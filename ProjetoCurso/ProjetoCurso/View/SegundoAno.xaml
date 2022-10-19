@@ -4,23 +4,25 @@
              x:Class="ProjetoCurso.View.SegundoAno"
              BackgroundColor="#FFF"
              Title="Disciplinas do Segundo Ano">
-    
+
     <ContentPage.Content>
 
         <ScrollView>
 
-            <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Frame>
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
 
-                <Button Text="Programação Web II" Clicked="ProWeb" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Banco de Dados II" Clicked="BancoDados" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Desenvolvimento de Sistemas" Clicked="DesSist" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Programação Mobile I" Clicked="ProMob" Style="{StaticResource BotaoCinza}"/>
-                <Button Text="Sistemas Embarcados" Clicked="SistEmb" Style="{StaticResource BotaoCinza}"/>
-                
+                    <Button Text="Programação Web II" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Banco de Dados II" Clicked="BancoDados" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Desenvolvimento de Sistemas" Clicked="DesSist" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Programação Mobile I" Clicked="ProMob" Style="{StaticResource BotaoVerm}"/>
+                    <Button Text="Sistemas Embarcados" Clicked="SistEmb" Style="{StaticResource BotaoVerm}"/>
 
-            </StackLayout>
-            
+
+                </StackLayout>
+            </Frame>
+
         </ScrollView>
-        
+
     </ContentPage.Content>
 </ContentPage>

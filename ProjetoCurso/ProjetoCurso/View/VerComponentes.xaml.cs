@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoCurso.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace ProjetoCurso.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VerComponentes : ContentPage
     {
-        public VerComponentes()
+        public VerComponentes(Componente c)
         {
             InitializeComponent();
+
+            BindingContext = c;
         }
     }
 }
