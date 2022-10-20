@@ -6,27 +6,49 @@
              Title="Componentes">
 
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand">
+        <StackLayout>
             <ScrollView>
 
                 <StackLayout Padding="20">
 
-                    <Label Text="{Binding Nome}" HorizontalTextAlignment="Center" FontAttributes="Bold"
-                           Margin="0,0,0,30" TextColor="#AB0209" FontSize="Title" />
+                    <Label Text="{Binding Nome}" Style="{ StaticResource FonteGeralPersonalizada}" HorizontalTextAlignment="Center" FontAttributes="Bold"
+                           Margin="0,0,0,30" TextColor="black" FontSize="30" />
 
-                    <Label Text="Atribuições e Responsabilidades" HorizontalOptions="Center"
-                           TextColor="#eee" BackgroundColor="#3E474C" FontSize="Large" />
 
-                    <Label Text="{Binding Atribuicoes}" Margin="0,0,0,30" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                    <Frame CornerRadius="10">
+                        <StackLayout>
+                            <Label Text="Atribuições e Responsabilidades" Style="{ StaticResource FonteGeralPersonalizada}" HorizontalTextAlignment="Start" FontAttributes="Bold"
+                           TextColor="#AB0209" FontSize="20" />
+                            <Label Text="{Binding Atribuicoes}" Margin="0,0,0,20" FontSize="Body" HorizontalTextAlignment="Start"/>
 
-                    <Label Text="Valores e Atitudes" HorizontalTextAlignment="Center" BackgroundColor="#3E474C" TextColor="#eee" FontSize="Large" />
 
-                    <Label Text="{Binding ValoresAtitudes}" FontSize="Medium" HorizontalTextAlignment="Center" />
+                            <Label Text="Valores e Atitudes" Style="{ StaticResource FonteGeralPersonalizada}" HorizontalOptions="Start" FontAttributes="Bold"
+                           TextColor="#AB0209" FontSize="20" />
+                            <Label Text="{Binding ValoresAtitudes}" Margin="0,0,0,20" FontSize="Body" HorizontalTextAlignment="Start" />
+
+
+                            <Label Text="Competências" Style="{ StaticResource FonteGeralPersonalizada}" HorizontalOptions="Start" FontAttributes="Bold"
+                           TextColor="#AB0209" FontSize="20" />
+                            <Label Text="{Binding Competencias}" Margin="0,0,0,20" FontSize="Body" HorizontalTextAlignment="Start" />
+
+
+                            <Label Text="Habilidades" Style="{ StaticResource FonteGeralPersonalizada}" HorizontalOptions="Start" FontAttributes="Bold"
+                           TextColor="#AB0209" FontSize="20" />
+                            <Label Text="{Binding Habilidades}" Margin="0,0,0,20" FontSize="Body" HorizontalTextAlignment="Start" />
+
+
+                            <Label Text="Bases Tecnológicas" Style="{ StaticResource FonteGeralPersonalizada}" HorizontalOptions="Start" FontAttributes="Bold"
+                           TextColor="#AB0209" FontSize="20" />
+                            <Label Text="{Binding BasesTecnologicas}" Margin="0,0,0,20" FontSize="Body" HorizontalTextAlignment="Start" />
+
+                        </StackLayout>
+
+                    </Frame>
 
                 </StackLayout>
 
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>
-    
+
 </ContentPage>
