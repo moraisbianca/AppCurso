@@ -16,6 +16,7 @@ namespace ProjetoCurso.View
         public PrimeiroAno()
         {
             InitializeComponent();
+            logo.Source = ImageSource.FromResource("ProjetoCurso.Images.logo.png");
         }
 
         private async void Fundamentos(object sender, EventArgs e)

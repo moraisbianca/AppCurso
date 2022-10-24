@@ -16,6 +16,7 @@ namespace ProjetoCurso
         {
             InitializeComponent();
             logo.Source = ImageSource.FromResource("ProjetoCurso.Images.logo.png");
+            logocps.Source = ImageSource.FromResource("ProjetoCurso.Images.logocps.png");
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial)));
         }
 

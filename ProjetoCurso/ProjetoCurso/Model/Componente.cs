@@ -6,8 +6,8 @@ namespace ProjetoCurso.Model
 {
     public class Componente
     {
+
         public string Nome { get; set; }
-        public int CargaHoraria { get; set; }
         public string Atribuicoes { get; set; }
         public string ValoresAtitudes { get; set; }
         public string Competencias { get; set; }

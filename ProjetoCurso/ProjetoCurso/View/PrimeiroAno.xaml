@@ -2,29 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoCurso.View.PrimeiroAno"
-             BackgroundColor="black"
+             BackgroundColor="#FFF"
              Title="Disciplinas do Primeiro Ano">
 
 
     <ContentPage.Content>
 
-        <ScrollView>
+        <StackLayout>
+            <StackLayout  Margin="0,60,0,0">
+                <Image x:Name="logo" Scale="2.5"/>
+            </StackLayout>
 
-            <Frame>
-                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <StackLayout Padding="10" Margin="0,30,0,0">
 
-                    <Button Text="Fundamentos da Informática" Clicked="Fundamentos" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Programação de Algoritmos" Clicked="ProAlg" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Programação Web I" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Banco de Dados I" Clicked="BancoDados" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Análise e Desenvolvimento de Sistemas" Clicked="Analise" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Design Digital" Clicked="Design" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Fundamentos da Informática" Clicked="Fundamentos" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Programação de Algoritmos" Clicked="ProAlg" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Programação Web I" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Banco de Dados I" Clicked="BancoDados" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Análise e Desenvolvimento de Sistemas" Clicked="Analise" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Design Digital" Clicked="Design" Style="{StaticResource BotaoVerm}"/>
 
+                <Label Text="2° ano DS 2022"
+                       FontSize="15" HorizontalTextAlignment="Center"
+                       Margin="0,180,0,0"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
+                
+            </StackLayout>
 
-                </StackLayout>
-            </Frame>
-        </ScrollView>
-
+        </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>

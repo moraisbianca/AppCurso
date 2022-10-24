@@ -3,20 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoCurso.View.Contato"
              Title="Contato">
-    
+
     <ContentPage.Content>
-        
-        <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
 
-            <Label Text="Etec Joaquim Ferreira do Amaral" FontSize="Title" FontAttributes="Bold"
-                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Start" Padding="10">
 
-            <Label Text="R. Humaitá, nº 1090 - Jaú/SP." VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="ETEC JOAQUIM FERREIRA DO AMARAL" 
+                   Style="{ StaticResource FonteGeralPersonalizada}"
+                   TextColor="Black"
+                   Margin="0,0,0,30"
+                   FontSize="25" FontAttributes="Bold"
+                   FontFamily=""
+                   VerticalOptions="Start" HorizontalTextAlignment="Center" />
 
-            <Button Text="Tel: (14) 3622-3566" Margin="10" Clicked="Button_Clicked" Style="{StaticResource BotaoVerm}" />
 
-            <Label Text="E-mail: e070dir@cps.sp.gov.br" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            
+
+            <Frame Scale="0.9" CornerRadius="10">
+                <Image x:Name="escola" Scale="2"/>
+            </Frame>
+
+            <Label Text="R. Humaitá, nº 1090 - Jaú/SP."
+                   Margin="10"
+                   HorizontalTextAlignment="Center"
+                   FontSize="15" FontAttributes="Bold" />
+
+            <Label Text="E-mail: e070dir@cps.sp.gov.br"
+                   FontSize="15" FontAttributes="Bold"
+                   Margin="10"
+                   HorizontalTextAlignment="Center"/>
+
+            <Button Text="Envie no WhatsApp" Clicked="Button_Clicked_1"
+                    Margin="10"
+                    Style="{ StaticResource BotaoVerm}"/>
+
+            <Button Text="Tel: (14) 3622-3566" Margin="10" Clicked="Button_Clicked" 
+                    Style="{StaticResource BotaoVerm}" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

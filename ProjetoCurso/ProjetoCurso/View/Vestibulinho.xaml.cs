@@ -15,6 +15,8 @@ namespace ProjetoCurso.View
         public Vestibulinho()
         {
             InitializeComponent();
+            vestibulinho2.Source = ImageSource.FromResource("ProjetoCurso.Images.vestibulinho2.jpg");
+            calendario.Source = ImageSource.FromResource("ProjetoCurso.Images.calendario.jpg");
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

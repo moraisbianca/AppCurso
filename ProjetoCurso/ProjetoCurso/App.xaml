@@ -16,15 +16,6 @@
                 </Setter>
             </Style>
 
-            <Style TargetType="Label" x:Key="TituloFontePersonalizada">
-                <Setter Property="FontFamily">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:String"
-                                Android="century-gothic-bold.ttf#century-gothic-bold" />
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
             <Style x:Key="BotaoVerm" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#AB0209" />
                 <Setter Property="TextColor" Value="#FFF" />

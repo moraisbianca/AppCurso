@@ -6,21 +6,26 @@
              Title="Disciplinas do Terceiro Ano">
 
     <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,60,0,10">
+                <Image x:Name="logo" Scale="2.5"/>
+            </StackLayout>
 
-        <ScrollView>
+            <StackLayout Padding="10" Margin="0,30,0,0">
 
-            <Frame>
-                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
-                    <Button Text="Programação Web III" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Programação Mobile II" Clicked="ProMob" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Sistemas Embarcados II" Clicked="SistEmb" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Segurança e Sistemas da Informação" Clicked="SegSistInfo" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso" Clicked="PlanejTCC" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Qualidade e Teste de Software" Clicked="TesteSoftware" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Programação Web III" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Programação Mobile II" Clicked="ProMob" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Segurança e Sistemas da Informação" Clicked="SegSistInfo" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso" Clicked="PlanejTCC" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Qualidade e Teste de Software" Clicked="TesteSoftware" Style="{StaticResource BotaoVerm}"/>
 
-                </StackLayout>
-            </Frame>
+                <Label Text="2° ano DS 2022"
+                       Margin="0,160,0,0"
+                       FontSize="15" HorizontalTextAlignment="Center"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
 
-        </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

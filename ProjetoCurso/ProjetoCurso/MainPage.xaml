@@ -8,20 +8,21 @@
             <Grid BackgroundColor="#FFF">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="160"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <StackLayout Grid.Row="0"
                              BackgroundColor="#FFF"
                              Padding="40"
                              Margin="10"
+                             VerticalOptions="Start"
                              HorizontalOptions="FillAndExpand">
                     
                     <Image x:Name="logo" Scale="2"/>
 
                 </StackLayout>
 
-                <StackLayout Grid.Row="1" Spacing="10" Margin="10" BackgroundColor="#FFF">
+                <StackLayout Grid.Row="1" Spacing="10" Margin="10">
 
                     <Button Text="Inicial" Clicked="Open_Inicial" Style="{ StaticResource BotaoVerm}" />
                     <Button Text="Primeiro Ano" Clicked="Open_Primeiro" Style="{ StaticResource BotaoCinza}" />
@@ -31,6 +32,19 @@
                     <Button Text="Contato" Clicked="Open_Contato" Style="{ StaticResource BotaoVerm}" />
 
                 </StackLayout>
+
+                <StackLayout Grid.Row="2"
+                             VerticalOptions="End">
+                    <Image x:Name="logocps" Scale="2"/>
+                </StackLayout>
+
+                <StackLayout  VerticalOptions="End"
+                    Grid.Row="3" Spacing="10" Margin="10">
+                    <Label Text="Desenvolvido pela Bibi Morais do 2° ano DS 2022, para a Expotec"
+                       FontSize="12" HorizontalTextAlignment="Center"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
+                </StackLayout>
+                
             </Grid>
         </ContentPage>
     </MasterDetailPage.Master>

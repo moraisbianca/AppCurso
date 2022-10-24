@@ -6,23 +6,26 @@
              Title="Disciplinas do Segundo Ano">
 
     <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,60,0,0">
+                <Image x:Name="logo" Scale="2.5"/>
+            </StackLayout>
 
-        <ScrollView>
+            <StackLayout Padding="10" Margin="0,30,0,0">
 
-            <Frame>
-                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+                <Button Text="Programação Web II" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Banco de Dados II" Clicked="BancoDados" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Desenvolvimento de Sistemas" Clicked="DesSist" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Programação Mobile I" Clicked="ProMob" Style="{StaticResource BotaoVerm}"/>
+                <Button Text="Sistemas Embarcados" Clicked="SistEmb" Style="{StaticResource BotaoVerm}"/>
 
-                    <Button Text="Programação Web II" Clicked="ProWeb" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Banco de Dados II" Clicked="BancoDados" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Desenvolvimento de Sistemas" Clicked="DesSist" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Programação Mobile I" Clicked="ProMob" Style="{StaticResource BotaoVerm}"/>
-                    <Button Text="Sistemas Embarcados" Clicked="SistEmb" Style="{StaticResource BotaoVerm}"/>
+                <Label Text="2° ano DS 2022"
+                       FontSize="15" HorizontalTextAlignment="Center"
+                       Margin="0,180,0,0"
+                       Style="{ StaticResource FonteGeralPersonalizada}" />
 
-
-                </StackLayout>
-            </Frame>
-
-        </ScrollView>
+            </StackLayout>
+        </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>
